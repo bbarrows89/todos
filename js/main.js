@@ -124,11 +124,11 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 	var editButton = taskListItem.querySelector('button.edit');
 	var deleteButton = taskListItem.querySelector('button.delete');
 	//bind editTask to edit button
-  editButton.onclick = editTask;
+	editButton.onclick = editTask;
 	//bind deleteTask to delete button
  	deleteButton.onclick = deleteTask;
 	//bind checkBoxEventHandler to checkbox
-  checkBox.onchange = checkBoxEventHandler;
+	checkBox.onchange = checkBoxEventHandler;
   
 };
 
