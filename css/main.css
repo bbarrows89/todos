@@ -9,6 +9,10 @@ body {
   width: 400px;
   margin: 100px auto 0;
 }
+h1 {
+  display: block;
+  margin: auto, auto;
+}
 ul {
   margin: 0;
   padding: 0;
