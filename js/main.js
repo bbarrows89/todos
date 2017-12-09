@@ -133,13 +133,13 @@ var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
 };
 
 //cycle over incompleteTaskHolder ul list items
-for (var incomplete = 0; incomplete < incompleteTasksHolder.children.length; incomplete++) {
+for (var i = 0; i < incompleteTasksHolder.children.length; i++) {
 	//bind events to list item's children (taskCompleted)	
 	bindTaskEvents(incompleteTasksHolder.children[i], taskCompleted);
 }
 
 //cycle over completedTaskHolder ul list items
-for (var complete = 0; complete < completedTasksHolder.children.length; complete++) {
+for (var j = 0; j < completedTasksHolder.children.length; j++) {
 	//bind events to list item's children (taskCompleted)	
-	bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
+	bindTaskEvents(completedTasksHolder.children[j], taskIncomplete);
 }
