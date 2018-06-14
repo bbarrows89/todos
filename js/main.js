@@ -113,8 +113,9 @@ var taskIncomplete = function() {
 };
 
 
-//Set the click handler to the addTask function
+//Set the event handler for clicking add button to addTask()
 addButton.addEventListener('click', addTask);
+//Set the event handler for pressing enter while entering task
 taskInput.addEventListener('keyup', function(e){
 	if (e.keyCode === 13) {
 		addTask();
