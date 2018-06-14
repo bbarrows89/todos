@@ -114,7 +114,12 @@ var taskIncomplete = function() {
 
 
 //Set the click handler to the addTask function
-addButton.addEventListener('click', addTask); 
+addButton.addEventListener('click', addTask);
+taskInput.addEventListener('keyup', function(e){
+	if (e.keyCode === 13) {
+		addTask();
+	}
+});
 
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
